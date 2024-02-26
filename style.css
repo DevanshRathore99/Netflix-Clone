@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 80vh;
+    position: relative;
+}
+
+.main .box {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.44;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    height: 75px;
+}
+
+nav img {
+    color: rgb(229, 9, 20);
+    position: relative;
+    z-index: 10;
+    width: 141px;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+    margin: 0px 8px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 75px);
+    color: white;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 15px;
+}
+
+.hero> :first-child {
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    height: 9px;
+    background-color: #303030;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    width: 109px;
+    height: 32px;
+    border-radius: 6px;
+
+
+}
+
+.btn-red {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 600;
+
+}
+
+.btn-red-2 {
+    border: none;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+.btn-red:hover {
+    cursor: pointer;
+    background-color: rgb(177, 25, 25);
+}
+
+.btn-red-2:hover {
+    cursor: pointer;
+    background-color: rgb(177, 25, 25);
+}
+
+.hero input {
+    color: white;
+    background-color: rgba(23, 23, 23, .3);
+    height: 2.7rem;
+    width: 32rem;
+    border: 1px solid red;
+
+}
+
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 48px 0px;
+    
+}
+
+@media screen and (max-width: 1300px) {
+    .first{
+        flex-wrap: wrap;
+        
+    }
+}
+
+.content-1 {
+    width: 39vw
+}
+
+.first h1 {
+    padding-bottom: 10px;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.first p {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.secimg-1{
+    position: relative;
+}
+
+.secimg-1 img {
+    width: 607px;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.secimg-1 video {
+    position: absolute;
+    top: 95px;
+    right: 88px;
+
+    width: 438px;
+
+}
+
+.third .secimg-1 {
+    position: relative;
+    z-index: -1;
+}
+
+.third .secimg-1 video {
+    position: absolute;
+    top: 59px;
+    right: 133px;
+    width: 368px;
+}
+.faq{
+    margin-bottom: 75px;
+}
+
+.faq h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 27px;
+
+}
+
+.faq-box {
+    transition: all .3s;
+    color: white;
+    display: flex;
+    background-color: #2d2d2d;
+    align-items: center;
+    justify-content: space-between;
+    width: 72vw;
+    margin: 10px auto;
+    border-radius: 2px;
+    height: 77px;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 0px 28px;
+
+
+}
+
+.faq-box:hover {
+    background-color: rgb(65, 65, 65);
+    cursor: pointer;
+}
+
+footer {
+    color: #b3b3b3;
+    width: 60vw;
+    margin: auto;
+}
+
+.questions{
+    padding: 34px 0;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    height: 200px;
+
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.footer a :hover{
+    cursor: pointer;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
